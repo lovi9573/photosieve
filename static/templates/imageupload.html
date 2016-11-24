@@ -1,0 +1,33 @@
+<div>
+	<div class="well" id="optionsdiv">
+		<h3>Archive Name:</h3>
+		<input type="text" ng-model="archiveName" ng-disabled="images.length != 0"></input>
+		<button data-ng-click="clear()">New</button>
+	</div>
+	<div class="well" id="dropdiv" data-file-drop>
+		<h2 class="center">Drag Images Here To Upload</h2>
+		<progress id="uploadProgress" class="progressbar"
+			value="{{ progress }}" max="100" ng-show="showProgress"></progress>
+		<span class="progresslabel" ng-show="showProgress">{{ progress
+			| number : 0 }}%</span>
+		<div class="imagecell" data-image-cell data-ng-repeat="image in images"></div>
+			
+	</div>
+	<!-- <div class='col-md-6 well scrollable' id="pictures">
+		<table class='table table-striped'>
+			<caption>
+				<h3>Uploaded Images</h3>
+			</caption>
+			<thead>
+				<tr>
+					<td>thumbnail</td>
+					<td>filename</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr image-row data-ng-repeat="image in images"></tr>
+			</tbody>
+
+		</table>
+	</div> -->	
+</div>

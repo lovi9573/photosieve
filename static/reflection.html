@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<p>RequireJS </p>
+<p>The requirejs library is included by the index.html in
+<!--  	<script data-main="scripts/app" src="scripts/lib/require.js"></script> -->
+This points requirejs to the app startup file
+app.js then sets up a base url that require will work from.  
+It creates alias names for the various modules it will be injecting (paths)
+(Shim) defines aliases to any global variables exported by modules as well as any dependencies that modules have in order to be loaded.
+(deps) defines which modules need to be loaded in order for requirejs to work?
+
+One of the deps for this app is ../appbootstrap 
+This defines a module in requirejs with several injections that attaches the angularjs app defined in main.js to the DOM on require's domReady event.
+</p>
+
+<p>Maven</p>
+
+
+Tomcat
+
+
+Angularjs
+	Services are singletons that are persistent on a given page.  When using angular-route this means that a service is persistent accross the whole app.
+	A binding made from a $scope to a member of a service is a binding by reference so changes in the service member are automatically represented in the $scope
+	Controllers are reloaded by angular-route on each route so their $scope is not preserved.
+	
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+<div ng-click="image.selected = !image.selected">
+	<img class="overlay" src="images/Check_Mark.png" ng-show="image.selected"></img> 
+	<span class="imagecaption"> 
+	<img ng-src="data:image/jpeg;base64,{{ image.data}}" width="100px" height="100px"></img> 
+	<img class="zoom" src="images/circle-plus.png" width="20px" height="20px" ng-click="zoom(image)"></img>
+	{{ image.filename | summary : 11}}
+	</span>
+</div>
+

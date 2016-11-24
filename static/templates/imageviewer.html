@@ -1,0 +1,24 @@
+<div>
+	<div class='col-md-2 well expandable' id="imagelist">
+		Archives
+		<ul class="list-group">
+			<li class="list-group-item" data-ng-repeat="archive in archives" data-ng-click="populateImages(archive.name);select($index)" ng-class="{active: $index == selected}">
+				<div >
+					<span>{{archive.name}}</span>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class='col-md-10 well expandable' id="image">
+		<h2 class="center">Images in archive {{currentArchive}}</h2>
+		<progress id="uploadProgress" class="progressbar"
+			value="{{ progress }}" max="100" ng-show="showProgress"></progress>
+		<span class="progresslabel" ng-show="showProgress">{{ progress
+			| number : 0 }}%</span>
+		<div class="imagecell" data-image-cell 	data-ng-repeat="image in images"></div>
+	</div>
+	<div id="zoomdiv" data-ng-show="showZoom" data-ng-click="showZoom=false;image={}">
+		<img data-ng-src="data:image/jpeg;base64,{{zoomImage.data}}" height="100%"></img>
+	</div>
+</div>
+

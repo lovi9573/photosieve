@@ -1,0 +1,84 @@
+@CHARSET "UTF-8";
+
+.progresslabel {
+    font-family: "Arial";
+    position: relative;
+    left: -50%;
+    top: -2em;
+    font-size: small;
+}
+
+.progressbar {
+	width: 90%;
+}
+
+.scrollable {
+   overflow-y: scroll;
+   height: 600px;
+}
+
+.center {
+	text-align: center;
+}
+
+.imagecell {
+	padding: 5px;
+	border: 1px solid;
+	border-color: #AAA;
+	margin: 5px;
+	display: inline-block;
+	border-radius: 4px;
+	background-color: rgb(245,245,245);
+/* 	width: 100px; */
+/* 	height: 115px; */
+}
+
+.imagecaption {
+	display: inline-block;
+}
+
+.imagecaption > img
+{
+	display: block;
+}
+
+.overlay
+{
+	position: absolute;
+}
+
+.zoom
+{
+position: relative;
+bottom: 100px;
+right: -80px;	
+}
+
+#zoomdiv
+{
+			height:100%;
+			width:100%;
+			position:fixed;
+			left:0;
+			top:0;
+			z-index:10 !important;
+			background-color:black;
+}
+
+.well
+{
+	background-color: rgba(245,245,245,0.5);
+	background-image: none;
+	overflow-y: scroll;
+	/*margin: 20px;*/
+}
+
+body
+{
+	background-image: url(../images/Pololu_Valley_Beach_Hawaii.jpg);
+}
+
+h3 
+{
+	display: inline;
+}

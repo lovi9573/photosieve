@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+
+li
+{
+	cursor: pointer;
+}
+
+iframe
+{
+	display: none;
+}
+
+body 
+{ 
+	padding-top: 70px; 
+	}
