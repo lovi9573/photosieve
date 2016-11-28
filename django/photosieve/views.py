@@ -31,7 +31,7 @@ class Rest_Archives(View):
 class Rest_Archive(View):
     def get(self, request, archive):
         image_names = sorted([x for x in os.listdir(os.path.join(PhotoalbumConfig.BASEPATH, archive))\
-                              if (not os.path.isdir(x) and os.path.splitext(x)[1] in PhotoalbumConfig.IMG_EXTENSIONS)])
+                              if (not os.path.isdir(x) and os.path.splitext(x)[1].lower() in PhotoalbumConfig.IMG_EXTENSIONS)])
         return JsonResponse({'return':image_names,
                              'status':"Success"})
     
