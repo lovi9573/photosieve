@@ -1,6 +1,6 @@
 #/bin/sh
 
-if [ $# -ne 2 ]; then
+if [ $# -ne 3 ]; then
 	echo "USE: install.sh <path to install static files> <path to install django> <uid:gid to chown to> "
 	exit
 fi
