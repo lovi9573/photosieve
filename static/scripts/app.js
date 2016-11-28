@@ -23,6 +23,9 @@ requirejs.config({
 		},
 		'bs':{
 			deps: ['jquery']
+		},
+		'jquery': {
+			exports: '$'
 		}
 		
 	},

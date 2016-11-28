@@ -8,3 +8,4 @@ class PhotoalbumConfig(AppConfig):
     THMB_WIDTH = 100;
     THMB_HEIGHT = 100;
     BASEPATH = "/home/jlovitt/temp/Archives";
+    IMG_EXTENSIONS = ['.jpg','.jpeg']
