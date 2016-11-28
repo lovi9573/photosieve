@@ -17,6 +17,6 @@ from django.conf.urls import include,url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^photoalbum/', include('photoalbum.urls')),
+    url(r'^photosieve/', include('photoalbum.urls')),
     url(r'^admin/', admin.site.urls),
 ]
